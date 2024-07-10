@@ -1,7 +1,4 @@
 [build]
-  base    = "."                   # Directorio base de tu proyecto
-  publish = "."                   # Directorio que contiene tu index.php
-  command = "composer install --working-dir=/opt/build/repo" # Ajusta la ruta si composer.json está en un subdirectorio
   functions = "functions"
 
 [[redirects]]

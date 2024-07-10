@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Sans+MS:wght@400&display=swap');
+
+.container-table {
+    font-family: 'Comic Sans MS', sans-serif;
+    max-width: 100%;
+    /*background: rgba(255, 255, 255, 0.171);  Fondo transparente */
+    margin: 70px auto;
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-auto-rows: 70px; /* Alto de la fila */
+    border: none; /* Sin borde */
+}
+
+.table_title {
+    grid-column-start: 1;
+    grid-column-end: 10;
+    color: rgb(26, 24, 24);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.9em;
+    border: none; /* Sin borde */
+}
+
+.table_header, .table_item_i, .table_item_c, .table_item_d {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    background: transparent; /* Fondo transparente */
+    border: none; /* Sin borde */
+    font-weight: bold; /* Negrita */
+}
+
+.table_header {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: white; /* Color del texto */
+    font-weight: bold; /* Negrita */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.822); /* Sombreado */
+}
+
+.table_item_i, .table_item_c, .table_item_d {
+    padding: 10px;
+    color: white; /* Color del texto */
+    font-weight: bold; /* Negrita */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.822); /* Sombreado */
+}
+
+.escudos {
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.rescuadro {
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    font-weight: bold;
+    font-size: 1.9em;
+}
+
+.table_item_c.local,
+.table_item_c.visitante {
+    font-weight: bold;
+}
+
+.table_item_c.resultado {
+    font-family: 'Comic Sans MS', sans-serif;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: darkblue;
+}
+
+/*esto es sobre el boton editar*/
+
+.editVs {
+    width: 50px;
+    height: 50px;
+    border: 2px solid white;
+    color: black;
+    background-color: transparent;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%; /* Hacer el botón redondo */
+    transition: background-color 0.3s, transform 0.3s; /* Transiciones para hover */
+}
+
+.editVs i {
+    font-size: 1.5em;
+    color: white; /* Color del icono */
+}
+
+.editVs:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Color de fondo en hover */
+    transform: scale(1.1); /* Agrandar un poco en hover */
+}
+

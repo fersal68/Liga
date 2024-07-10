@@ -1,0 +1,68 @@
+ /*body {
+    padding-top: 70px;
+        Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes.
+} */
+
+body {
+    padding-top: 70px;
+    background-image: url('../images/fondo_cancha.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/*   esto es para que las pantallas de menu se ingresen se hagan trasparente y se siga viendo el fondo
+
+.transparente {
+    background-color: rgba(255, 255, 255, 0.8); // Fondo blanco con 80% de opacidad 
+    padding: 20px; // Opcional: añadir espacio alrededor del contenido 
+    border-radius: 10px; // Opcional: redondear las esquinas 
+}*/
+.transparente {
+    background-color: rgba(255, 255, 255, 0.103); 
+    padding: 20px; 
+    border-radius: 10px; 
+}
+
+
+
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu>.dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -6px;
+    margin-left: -1px;
+    -webkit-border-radius: 0 6px 6px 6px;
+    -moz-border-radius: 0 6px 6px;
+    border-radius: 0 6px 6px 6px;
+}
+
+.dropdown:hover>.dropdown-menu {
+    display: block;
+}
+
+.dropdown-submenu:hover>.dropdown-menu {
+    display: block;
+}
+
+.dropdown-submenu>a:after {
+    display: block;
+    content: " ";
+    float: right;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 5px 0 5px 5px;
+    border-left-color: rgb(65, 175, 84);
+    margin-top: 5px;
+    margin-right: -10px;
+}
+
+.dropdown-submenu:hover>a:after {
+    border-left-color: rgb(18, 139, 45);
+}

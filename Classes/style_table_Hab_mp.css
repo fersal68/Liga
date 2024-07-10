@@ -1,0 +1,33 @@
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Comic+Sans+MS:wght@400&display=swap');
+
+/*  font-family: 'Comic Sans MS', sans-serif;*/  
+.text-black-bold-shadow {
+    color: black;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px white;
+}
+/* Estilos para texto en rojo con sombreado blanco */
+.text-red-shadow {
+    color: red;
+    text-shadow: 1px 1px 2px white;
+}
+.btn-success {
+    font-weight: bold;
+}
+.list-unstyled{
+    background-color: rgba(255, 255, 255, 0.336); 
+    color: black;
+    text-shadow: 3px 3px 6px white;
+    font-size: 1.5em;
+}
+.lead{
+    color: white;
+    text-shadow: 1px 1px 2px black;
+}
+.fondotex{
+    color: rgba(255, 0, 0, 0.658);
+}
+

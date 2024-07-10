@@ -1,0 +1,17 @@
+.table-responsive {
+    background-color: rgba(81, 230, 126, 0.514); 
+}
+
+.dataTables_info{
+    font-size: 1em;
+    color: white;
+    font-weight: bold;
+}
+
+.odd , .even {
+    font-weight: bold;
+}
+
+.btn {
+    font-weight: bold;
+}

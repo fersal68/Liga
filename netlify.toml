@@ -1,0 +1,9 @@
+[build]
+  base    = "liga"            # Cambia esta ruta si 'partidos' no es tu directorio base
+  publish = "."                   # Directorio que contiene tu index.php
+  command = "composer install"    # Si estás usando Composer para gestionar dependencias
+
+[[redirects]]
+  from = "/*"
+  to = "/index.php"
+  status = 200

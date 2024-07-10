@@ -4,16 +4,20 @@ exports.handler = async (event, context) => {
   return new Promise((resolve, reject) => {
     exec('php -f /path/to/your/script.php', (error, stdout, stderr) => {
       if (error) {
-        reject({
+        console.error('Error ejecutando PHP:', error);
+        return reject({
           statusCode: 500,
-          body: stderr
-        });
-      } else {
-        resolve({
-          statusCode: 200,
-          body: stdout
+          body: JSON.stringify({
+            message: 'Error ejecutando PHP',
+            error: error.message,
+            stderr: stderr
+          })
         });
       }
+      resolve({
+        statusCode: 200,
+        body: stdout
+      });
     });
   });
 };

@@ -15,6 +15,7 @@ exports.handler = async (event, context) => {
         });
       }
       console.log('PHP version:', stdout);
+
       exec('php -f /opt/build/repo/index.php', (error, stdout, stderr) => {
         if (error) {
           console.error('Error ejecutando script PHP:', error);
@@ -33,5 +34,15 @@ exports.handler = async (event, context) => {
         });
       });
     });
+  }).catch((err) => {
+    console.error('Unhandled error:', err);
+    return {
+      statusCode: 500,
+      body: JSON.stringify({
+        message: 'Unhandled error',
+        error: err.message,
+        details: err
+      })
+    };
   });
 };
